@@ -114,3 +114,8 @@ npm i yup
 ```bash
 npm i @hookform/resolvers
 ```
+
+## 🎨 Install JS-Cookies
+```bash
+npm install js-cookie @types/js-cookie
+```
