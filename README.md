@@ -80,6 +80,11 @@ npm i react-icons
 npm i lucide-react
 ```
 
+## 🎨 Install Lottie-React-Animation`
+```bash
+npm i lottie-react
+```
+
 ## 🎨 Install Sonnar(Toster(using for sweet alert))
 ```bash
 npm i sonner
