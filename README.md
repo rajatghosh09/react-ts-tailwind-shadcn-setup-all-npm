@@ -124,3 +124,8 @@ npm i @hookform/resolvers
 ```bash
 npm i js-cookie @types/js-cookie
 ```
+
+## 🎨 Install appWrite
+```bash
+npm i appwrite
+```
