@@ -1,6 +1,6 @@
-# <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo" width="25"/> React +<img src="https://vitejs.dev/logo.svg" alt="Vite Logo" width="25"/> Vite + <img src="https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png" alt="TypeScript Logo" width="25"/> TypeScript + <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS Logo" width="25"/> Tailwind + shadcn/ui
+# <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo" width="25"/> React +<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="25"/> Next.js +<img src="https://vitejs.dev/logo.svg" alt="Vite Logo" width="25"/> Vite + <img src="https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png" alt="TypeScript Logo" width="25"/> TypeScript + <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS Logo" width="25"/> Tailwind + shadcn/ui
 
-A starter project using **Vite**, **React**, **TypeScript**, **Tailwind CSS**, and **shadcn/ui** components.
+A starter project using **Vite**, **React**, **Next.js**, **TypeScript**, **Tailwind CSS**, and **shadcn/ui** components.
 
 ---
 
