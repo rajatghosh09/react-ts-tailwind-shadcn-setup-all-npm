@@ -129,3 +129,8 @@ npm i js-cookie @types/js-cookie
 ```bash
 npm i appwrite
 ```
+
+## 🎨 Install Redux-Toolkit
+```bash
+npm i @reduxjs/toolkit
+```
