@@ -143,11 +143,20 @@ npm i @reduxjs/toolkit
 ```bash
 npx create-next-app@latest
 What is your project named? ./ (if you already created a folder, then do "./" otherwise "folder name")
-Would you like to use TypeScript? Yes (also choose JavaScript)
-Which linter would you like to use? » ESLint
-Would you like to use React Compiler? No
-Would you like to use Tailwind CSS? No
-Would you like your code inside a `src/` directory? Yes
-Would you like to customize the import alias (`@/*` by default)? Yes
+Would you like to use TypeScript?
+# Select: TypeScript
+or
+# Select: JavaScript
+Which linter would you like to use? »
+# Select: ESLint
+Would you like to use React Compiler?
+# Select: No
+Would you like to use Tailwind CSS?
+# Select: No
+Would you like your code inside a `src/` directory?
+# Select: Yes
+Would you like to customize the import alias (`@/*` by default)?
+# Select: Yes
 What import alias would you like configured? ... @/*
+# Select: press enter
 ```
