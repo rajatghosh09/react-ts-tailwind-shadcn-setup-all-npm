@@ -22,7 +22,7 @@ cd file_name
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ```
 
-### 2. Create project
+### 2. Create a project with Vite+React
 
 ```bash
 npm create vite@latest
@@ -137,4 +137,17 @@ npm i react-redux
 ## 🎨 Install Redux-Toolkit
 ```bash
 npm i @reduxjs/toolkit
+```
+
+### 3. Create a project with NextJS
+```bash
+npx create-next-app@latest
+What is your project named? ./ (if you already created a folder, then do "./" otherwise "folder name")
+Would you like to use TypeScript? Yes (also choose JavaScript)
+Which linter would you like to use? » ESLint
+Would you like to use React Compiler? No
+Would you like to use Tailwind CSS? No
+Would you like your code inside a `src/` directory? Yes
+Would you like to customize the import alias (`@/*` by default)? Yes
+What import alias would you like configured? ... @/*
 ```
