@@ -160,3 +160,23 @@ Would you like to customize the import alias (`@/*` by default)?
 What import alias would you like configured? ... @/*
 # Select: press enter
 ```
+
+## 🎨 Install supabase
+```bash
+npm i @supabase/supabase-js
+```
+
+## 🎨 Install next-js cookies
+```bash
+npm i cookies-next
+```
+
+## 🎨 Install zustand
+```bash
+npm install zustand
+```
+
+## 🎨 Install npm tanstack/react-query
+```bash
+npm i @tanstack/react-query-devtools
+```
