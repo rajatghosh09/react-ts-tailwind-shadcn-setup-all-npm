@@ -143,6 +143,8 @@ npm i @reduxjs/toolkit
 ```bash
 npx create-next-app@latest
 What is your project named? ./ (if you already created a folder, then do "./" otherwise "folder name")
+Would you like to use the recommended Next.js defaults?
+# Select: No, customize settings
 Would you like to use TypeScript?
 # Select: TypeScript
 or
@@ -154,6 +156,8 @@ Would you like to use React Compiler?
 Would you like to use Tailwind CSS?
 # Select: No
 Would you like your code inside a `src/` directory?
+# Select: Yes
+Would you like to use App Router? (recommended)
 # Select: Yes
 Would you like to customize the import alias (`@/*` by default)?
 # Select: Yes
