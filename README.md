@@ -230,3 +230,81 @@ npx shadcn@latest init
 √ Select a component library » Base UI (Recommended)
 √ Which preset would you like to use? » Nova
 ```
+
+### 🎨 Install shadcn using TS
+```bash
+## First install Tailwind CSS
+npm install tailwindcss @tailwindcss/vite
+
+## Replace everything in src/index.css
+@import "tailwindcss";
+
+## Install @types/node
+npm install -D @types/node
+
+## Edit tsconfig.json file
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
+
+## Edit tsconfig.app.json file
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "es2023",
+    "lib": ["ES2023", "DOM"],
+    "module": "esnext",
+    "types": ["vite/client"],
+    "allowArbitraryExtensions": true,
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"]
+}
+
+## Edit vite.config.ts file
+import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite'
+import tailwindcss from "@tailwindcss/vite";
+import path from "node:path";
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+
+  resolve: {
+    alias: {
+      "@": path.resolve(import.meta.dirname, "./src"),
+    },
+  },
+})
+
+## Now install shadcn ui and choose
+npx shadcn@latest init
+
+√ Select a component library » Base UI (Recommended)
+√ Which preset would you like to use? » Nova
+```
