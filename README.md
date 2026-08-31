@@ -186,7 +186,47 @@ npm i @tanstack/react-query-devtools
 ```
 
 ### 🎨 Install shadcn using JS
-## First install Tailwind CSS
 ```bash
+## First install Tailwind CSS
 npm install tailwindcss @tailwindcss/vite
+
+## Replace everything in src/index.css
+@import "tailwindcss";
+
+## Now create the jsconfig.json file ans paste it
+{
+    "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "moduleResolution":"bundler"
+  },
+  "include":["src"]
+}
+
+## Now update vite.config.js
+import tailwindcss from '@tailwindcss/vite'
+import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite'
+import path from 'path'
+import { fileURLToPath } from 'url'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+})
+
+## Now install shadcn ui and choose
+npx shadcn@latest init
+
+√ Select a component library » Base UI (Recommended)
+√ Which preset would you like to use? » Nova
 ```
