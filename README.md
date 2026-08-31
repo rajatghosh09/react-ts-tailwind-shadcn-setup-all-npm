@@ -180,7 +180,13 @@ npm i cookies-next
 npm install zustand
 ```
 
-## 🎨 Install npm tanstack/react-query
+## 🎨 Install tanstack/react-query
 ```bash
 npm i @tanstack/react-query-devtools
+```
+
+### 🎨 Install shadcn using JS
+## First install Tailwind CSS
+```bash
+npm install tailwindcss @tailwindcss/vite
 ```
